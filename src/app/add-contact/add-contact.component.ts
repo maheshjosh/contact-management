@@ -42,7 +42,7 @@ export class AddContactComponent implements OnInit {
       this.contact = this.contactService.savaContact(contact);
       console.log(contact);
       alert("Contact Save Successfuly");
-     // this.router.navigate(['//view-contact']);
+      this.router.navigate(['//view-contact']);
     }
     
   }
