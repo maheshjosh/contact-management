@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="row"></div>
+  <h2 class="text-center page-header pt-4 pb-2">Contact Form</h2>
+  <form class="form-group p-4" name="ContactForm" #userForm="ngForm" (ngSubmit)="submitForm(userForm, id, contact)">
+    <div class="row">
+      <div class="mb-2 col-md-2">
+        <img class=" img-thumbnail img-responsive" style="width: 100px; height:120px;" [src]="image">
+      </div>
+
+      <div class="mb-2 col-md-8">
+        <div class="row">
+          <input type="text" class="form-control mb-2 col-md-6" id="first_name" name="first_name" #first_name ="ngModel" [(ngModel)]="contact.first_name"
+            placeholder="First Name">
+          <span class="mb-2 col-md-1 col-sm-0"></span>
+          <input type="text" class="form-control mb-2 col-md-5" id="last_name" name="last_name" #last_name ="ngModel" [(ngModel)]="contact.last_name"
+            placeholder="Last Name">
+        </div>
+
+        <div class="row">
+          <input type="text" class="form-control mb-2 col-md-6" id="gender" name="gender" #gender ="ngModel" [(ngModel)]="contact.gender"
+            placeholder="Gender">
+          <span class="mb-2 col-md-1 col-sm-0"></span>
+          <input type="date" class="form-control mb-2 col-md-5" id="birthday" name="birthday" #birthday ="ngModel" [(ngModel)]="contact.birthday"
+            placeholder="Birthday">
+        </div>
+
+        <div class="row">
+          <input type="text" class="form-control mb-2 col-md-6" id="company" name="company" #company ="ngModel" [(ngModel)]="contact.company"
+            placeholder="Company">
+          <span class="mb-2 col-md-1 col-sm-0"></span>
+          <input type="text" class="form-control mb-2 col-md-5" id="job_title" name="job_title" #job_title ="ngModel" [(ngModel)]="contact.job_title"
+            placeholder="Job title">
+        </div>
+
+        <div class="row">
+          <input type="email" class="form-control mb-2 col-md-12" id="email" name="email" #email ="ngModel" [(ngModel)]="contact.email"
+            placeholder="Enter Email Id">
+        </div>
+
+        <div class="row">
+          <input type="tel" class="form-control mb-2 col-md-6" id="mobile_phone" name="mobile_phone" #mobile_phone ="ngModel" [(ngModel)]="contact.mobile_phone"
+            placeholder="Enter Mobail No.">
+          <span class="mb-2 col-md-1 col-sm-0"></span>
+          <input type="tel" class="form-control mb-2 col-md-5" id="home_phone" name="home_phone" #home_phone ="ngModel" [(ngModel)]="contact.home_phone"
+            placeholder="Enter Home Phone">
+        </div>
+
+        <div class="row">
+          <input type="tel" class="form-control mb-2  col-md-6" id="mobile_phone" name="mobile_phone" #mobile_phone ="ngModel" [(ngModel)]="contact.mobile_phone"
+            placeholder="Enter Mobail No.">
+          <span class="mb-2 col-md-1 col-sm-0"></span>
+          <input type="tel" class="form-control mb-2 col-md-5" id="home_phone" name="home_phone" #home_phone ="ngModel" [(ngModel)]="contact.home_phone"
+            placeholder="Enter Home Phone">
+        </div>
+
+        <div class="row">
+          <input type="text" class="form-control mb-2 col-md-12" id="home_street" name="home_street" #home_street ="ngModel" [(ngModel)]="contact.home_street"
+            placeholder="Enter Address">
+        </div>
+
+        <div class="row">
+          <input type="text" class="form-control mb-2 col-md-6" id="home_city" name="home_city" #home_city ="ngModel" [(ngModel)]="contact.home_city"
+            placeholder="Enter City">
+          <span class="mb-2 col-md-1 col-sm-0"></span>
+          <input type="text" class="form-control mb-2 col-md-5" id="home_state" name="home_state" #home_state ="ngModel" [(ngModel)]="contact.home_state"
+            placeholder="Enter State">
+        </div>
+
+        <div class="row">
+          <input type="text" class="form-control mb-2 col-md-6" id="home_country" name="home_country" #home_country ="ngModel" [(ngModel)]="contact.home_country"
+            placeholder="Enter Country">
+          <span class="mb-2 col-md-1 col-sm-0"></span>
+          <input type="number" class="form-control mb-2 col-md-5" id="country_code" name="country_code" #country_code ="ngModel" [(ngModel)]="contact.country_code"
+            placeholder="Country Code">
+        </div>
+
+        <div class="row">
+          <input type="text" class="form-control mb-2 col-md-12" id="notes" name="notes" #notes ="ngModel" [(ngModel)]="contact.notes"
+            placeholder="Enter Notes">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <button type="submit" class="btn btn-primary m-auto col-md-2 mb-2">Submit</button>
+    </div>
+  </form>
+</div>
